@@ -1,0 +1,200 @@
+git
+it is a version controller
+used to keep track on a code
+easy and simple to learn
+
+
+git-hub
+used to store and manage the code
+cloud storage
+ 
+how to use 
+1.install git-bash
+or
+command-prompt
+or 
+vs-code
+
+git scm download
+ 
+      (git init)    (clone)               (git command)
+vs code ----->local repo------------------>git-hub(cloud)
+               /  \
+un-tracked-files   tracked files              git remote add origin http-path
+>create            git add file-name          
+>update            or                         git push -u origin master/main
+>delete            git add              
+                   and
+                   git commit -m""
+
+react native is used to mobile application
+electron js is used to desktop application
+react js is used is develop wed application
+
+WHAT IS JAVA SCRIPT
+it is used to convert static page into dynamic page
+data types
+primitive data 
+number ,string ,Boolean ,undefined ,null
+non primitive data types
+class ,array ,functions ,sets ,object
+
+variables in js
+-->set of block used to store data
+
+variables:
+--1)Static typed and dynamic type:
+-->dynamic in nature
+eg:var a=10
+
+scope three types
+1.global-scope
+2.local-scope/script-scope
+3.block-scope
+
+variables divided into 3 types
+1.var
+2.let
+3.const
+ 
+var
+var key is used in 1995-2015
+let
+let key is used in 2015
+
+EXAMPLE1
+
+
+EXAMPLE-2
+var a=1;
+a=5;
+document.write(a+a)
+console.log(a+a)
+OUTPUT:
+10
+
+1)Reassigning with var also accepted
+2)Reassigning with let NOT accepted
+3)Reassigning with const NOT accepted
+ 
+redeclaring with var is accepted
+EXAMPLE:
+var a=1;
+a=5;
+document.write(a+a)
+console.log(a+a)
+OUTPUT:10
+
+Reassigning with let NOT accepted
+EXAMPLE:
+var a=1;
+a=5;
+document.write(a+a)
+console.log(a+a)
+OUTPUT:ERROR
+
+Reassigning with const NOT accepted
+EXAMPLE:
+var a=1;
+a=5;
+document.write(a+a)
+console.log(a+a)
+OUTPUT:ERROR
+ 
+EXAMPLE (VAR)
+var a="sai"
+{
+  var a="kumar"
+  console.log(a)
+}
+console.log(a)
+OUTPUT:kumar
+ 
+because block statement is not there in var
+
+EXAMPLE (LET)
+let a="sai"
+{
+  let a="kumar"
+  console.log(a)
+  console.log(a)
+
+}
+console.log(a)
+OUTPUT:
+kumar
+kumar
+sai
+OUTPUT:kumar
+
+DATA TYPES:
+1)DYNAMIC TYPE LANGUAGE
+two types
+1)Primitive data types
+2)non primitive data types
+to check the data type-type of 
+1)primitive data type : predefined ; we can store single values
+1)number : integer , floats
+2)string : stream of characters enclosed in quotes
+--single , double , backtick quotes ;
+3)Boolean : true or false 
+4) null : empty value or no value
+5)undefined --declared variables with no values
+
+a=sai
+b=kumar
+age=30
+letc=
+output: i am sai kumar , my age is 30 years old 
+
+condition: an expression that evaluates the result(true or false)
+console.log(5>4)
+
+DITIONAL STATEMENT:
+--to make the set instruction execute only when the conditionl is true 
+block of code (conditional block):set of instuction
+--when this block of code will execute it will execute when the specific condition is true
+indentation: {
+              ---block of code
+             }
+
+if:  only possible condition
+CON 
+elseif: #
+else: #
+#syntax:
+#switch
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age
+        console.log(age)
+        //let a=null
+        //document.write(a)
+        //document.write(typeof(a))
+        //let a=1
+        //console.log("hi +a+a")
+        //document.write('hi+ a+a' ,"<br>")
+        //document.write(`hi+ ${a+a}`)
+        //console.log(`hi +${a+a}`)
+        // a="sai"
+        //b="kumar"
+        //age=30
+        //document.write(`I am ${a+"  "+b},my age is ${age} is year old`)
+    </script>
+</body>
+</html
+
+
+
+ 
+
+
