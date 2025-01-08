@@ -1,0 +1,60 @@
+JAVA SCRIPT OPERATORS:
+1)Arithmetic operators:
++, -, *,
+Multiplication    - *
+division          - / (Q)
+Modulus Operators - % (R)
+Exponential (Raised 
+
+Assignment
+Var student = "swetha"
+
+Logical operators:
+and -&&
+T and T=T
+
+Relational operators 
+
+conditional operator; Ternary operators(?)
+First evaluates 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert("Sai charan")
+        //document.write(alert)
+        // let aa=prompt("Enter your name?")
+        //alert(`My name is :${aa}`)
+        let a1=prompt()
+        document.write(a1 ,"<br>")
+        document.write(typeof(a1) ,"<br")
+        let a2=prompt()
+        document.write(a1+a2 ,"<br>")       
+        let t=40
+        let r=(t>40)?'Ac-off': 'Ac-on'
+        document.write(r ,"<br>")
+        let a="5"
+        let b="5"
+        document.write(a==b, "<br>")
+        document.write(a!=b, "<br>")
+        document.write(a===b, "<br>")
+        document.write(a!==b, "<br>")
+        document.write(a>b &&  a>2 ,"<br>")
+        document.write(a>b && a>12 ,"<br>")
+        document.write(a>b || a>12 ,"<br>")
+        document.write(!(a>12) ,"<br>")
+        a+=40//a=a+40 a=5+40=45
+        b-=5 //b=b-5 //2
+        document.write(a,"<br>")
+        document.write(b,"<br>")
+        document.write(a/b ,"<br>")
+        document.write(a%b)
+    </script>
+</body>
+</html>
