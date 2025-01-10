@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        let a=parseInt(prompt("Enter the total number of working days: "))
+        let b=parseInt(prompt("Enter the number of days you were absent: "))
+        let c=a-b
+        let d=(c/a)*100
+        if(d<75){
+            document.write("You are not eligible to write the exam as your attendance percentage is "+d+"%")
+        }else{
+            document.write("You are eligible to write the exam as your attendance percentage is "+d+"%")
+        }
+      //let a=parseInt(prompt("Enter 1st number: "))
+      //let b=parseInt(prompt("Enter 2nd number: "))
+     // let c=parseInt(prompt("Enter 3rd number: "))
+      //if(a>b && a>c){
+     // document.write("The largest number is "+a)
+      //    }else if(b>a && b>c){
+       //       document.write("The largest number is "+b)
+       //   }else{
+       //       document.write("The largest number is "+c)
+      //}
+        
+        //let number=parseInt(prompt("enter a number:"))
+        //if(number %2==0 && number %3==0){
+        //    document.write("number is divsible by 2 and 3 both")
+        //}else{
+        //   document.write("it is not divsible by 2 and 3 both")
+        //}
+    </script>
+</body>
+</html>
