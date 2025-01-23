@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sum=function(n1 ,n2){
+let r= n1+n2
+return r
+}
+console.log(sum(8,9))
+
+//         function a(aa,bb){
+// return aa+bb;
+// }
+// let n1=parseFloat(prompt("enter a number1"))
+// let n2=parseFloat(prompt("enter a number2"))
+// let result = a(n1,n2);
+// console.log("The sum is :"+result)
+        // function add(a,b){
+        //     console.log(a+b)
+        // }
+        // add(3,5)
+        // add(7,3)
+
+        // function greet(){
+        //     console.log ("Hello Sudha")
+        // }
+        // greet()
+        // console.log("Hi Sai charan")
+        // greet()
+        // console.log("Hi Mumma")
+        // function g(name){
+        //     console.log("Hello "+name)
+        // }
+        // let name=prompt("Enter your name?")
+        // g(name)
+    </script>
+</body>
+
+
+# Add two number 
+#two argument
+ 
+function add(a,b){
+console.log(a+b)
+}
+add(3,5)
+add(7,3)
+
+function returns:
+the return statement is used to return the values to function call
+
+example:
+function a(aa,bb){
+return aa+bb;
+}
+let n1=parseFloat(prompt("enter a number1")
+let n2=parseFloat(prompt("enter a number2")
+let result = a(n1,n2);
+console.log("The sum is :"+result)
+
+Anonymous function:
+a function with out name ,after we create a function with out name and we assign it to a variable
+Example:
+sum=function(n1 ,n2)1{
+let r= n1+n2
+return r
+}
+console.log(sum(8,9))
+
+</html>
