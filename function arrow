@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let mypromise = new promise((resolve, reject) => {
+        let success = true;
+        if (success) {
+          resolve("task complted");
+        } else {
+          reject("task failed");
+        }
+      });
+
+      //       function greet(name, callback) {
+      //   console.log("hello,${name}!");
+      //   callback();
+      // }
+      // function saygoodbye()=>{
+      //   console.log("goodbye");
+      // }
+      // greet("sam", saygoodbye);
+
+      //       console.log("mallareddyuniversity");
+      // setTimeout(() => {
+      //   //built in function
+      //   console.log("hi im waiting");
+      // }, 6000);
+      // console.log("im in lab");
+
+      // function task1() {
+      //   console.log("Task1:start");
+      // }
+      // function task2() {
+      //   console.log("Task2:start");
+      // }
+      // function task3() {
+      //   console.log("Task3:start");
+      // }
+      // task1();
+      // task2();
+      // task3();
+      // let age = 18;
+      // let welcome =age<18?
+      // () => console.log('hi'):
+      // () => console.log('grp7');
+      // welcome()
+
+    // let greet=()=>console.log("hello")
+    // greet()
+    //     let x = (x, y) => {
+    //     console.log(x + y);
+    //   };
+    //   x(20, 30);
+    //   x(40, 50);
+    </script>
+</body>
+</html>
