@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pro=new Promise((resolve,reject)=>{
+        resolve(5);
+    })
+    pro.then(result=>{
+        console.log(result)
+        setTimeout((pro)=>{
+            console.log("success")
+        },3000)
+    })
+//         let mypromise = new Promise((resolve, reject) => {
+//     let success = true;
+//     if (success) {
+//         resolve();
+//     } else {
+//         reject();
+//     }
+// });
+
+// mypromise.then(() => {
+//     console.log("Success");
+//     document.write("Success");
+// }).catch(() => {
+//     console.log("Failed");
+//     document.write("Failed");
+// });
+
+        // let promise=new promise((resolve,reject)=>{
+        //     resolve(5);
+        // })
+        // promise.then(result =>{
+        //     console.log(result);
+        //     return result*2
+        // })
+        // then(result =>{
+        //     console.log (result)+3
+        // })
+        // .catch(error=>{
+        //     Console.log("error" ,error)
+        // })
+    //     let mypromise = new Promise((resolve, reject) => {
+    // let success = true;
+    // if(success){
+    //     resolve("Promise is resolved");
+    // }else{
+    //     reject("Promise is rejected");
+    // }
+    // });
+    // mypromise
+    // .then((result)=>{
+    //     console.log(result);
+    // });
+    // mypromise
+    // .catch((error)=>{
+    // console.log(error);
+    // })
+        
+    </script>
+</body>
+</html>
+
+
+promise:
+ --A promise a special javascript object that represent eventual completion of all asynchronous 
+operation
+
+three states:
+1.pending
+2.fulfilled
+3.rejected
+
+example:
+1) To create a promise -new promises()
+two parameters-
+resolve 
+reject 
+ 
+2)handling the result:
+then() method is called when promise is fulfilled
+it will receives the result from resolve()
+catch() method is called if the promise is rejected it receives the error message from reject()
