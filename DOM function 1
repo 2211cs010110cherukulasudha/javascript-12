@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1  id="a">koushik</h1>
+<h1 id="b">sudha</h2>
+<h1 id="c">pooja</h1>
+<h1 id="d">pravali</h2>
+<h1 id="d">sarika</h1>
+
+<script>
+    let x=document.getElementById('a')
+    console.log(x) 
+    for(let i=0; i<x.length;i++){
+        console.log(x[i])
+     }
+
+
+        let pro=new Promise((resolve,reject)=>{
+        resolve(5);
+    })
+    pro.then(result=>{
+        console.log(result)
+        setTimeout((pro)=>{
+            console.log("success")
+        },3000)
+    }) -->
+//         let mypromise = new Promise((resolve, reject) => {
+//     let success = true;
+//     if (success) {
+//         resolve();
+//     } else {
+//         reject();
+//     }
+// });
+
+// mypromise.then(() => {
+//     console.log("Success");
+//     document.write("Success");
+// }).catch(() => {
+//     console.log("Failed");
+//     document.write("Failed");
+// });
+
+        // let promise=new promise((resolve,reject)=>{
+        //     resolve(5);
+        // })
+        // promise.then(result =>{
+        //     console.log(result);
+        //     return result*2
+        // })
+        // then(result =>{
+        //     console.log (result)+3
+        // })
+        // .catch(error=>{
+        //     Console.log("error" ,error)
+        // })
+    //     let mypromise = new Promise((resolve, reject) => {
+    // let success = true;
+    // if(success){
+    //     resolve("Promise is resolved");
+    // }else{
+    //     reject("Promise is rejected");
+    // }
+    // });
+    // mypromise
+    // .then((result)=>{
+    //     console.log(result);
+    // });
+    // mypromise
+    // .catch((error)=>{
+    // console.log(error);
+    // })
+        
+    <!-- </script> -->
+</body>
+</html>d
