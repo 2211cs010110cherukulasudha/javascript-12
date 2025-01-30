@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    <h2> I am sudha</h2>
+    <h1>removing child node</h1>
+    <ul>
+        <li>Charan</li>
+        <li><sudha</li>
+        <li>kanna</li>
+    </ul>
+        const ul =document.querySelector('ul')
+        const lists =document.querySelectorAll('li')
+        for(const list of lists){
+            console.log('Removing: ${list.textContent}')
+            ul.removeChild(list)
+        }
+    </script>
+    <!-- // const titles=["Sai charan" ,"Sudha" ,"mummmaa"]
+    //   for(let i=0;i<titles.length ;i++){
+    //     let title=document.createElement('h1')
+    //      title.className="a"
+    //      title.textContent=titles[i]
+    //     console.log(title)
+    //  }
+    // let title=""
+    // for(let i=0; i<3 ;i++){
+    //     title=document.createElement('h')
+    //     title.className="tt"
+    //     title.textContent=i
+    //     console.log(title)
+    // } -->
+</body>
+</html>
