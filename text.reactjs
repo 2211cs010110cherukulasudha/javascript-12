@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+</head>
+<body>
+    <div id="app"></div>
+<script type="text/babel">
+    const App = () => {
+        const isLoggedIn = true;
+        return (
+            <div>
+                {isLoggedIn ? (<h1>Welcome back, user!</h1>) : (<h1>Please log in</h1>)}
+                {isLoggedIn && <h1>You have a new notification</h1>}
+            </div>
+        );
+    };
+    const element = document.getElementById('app');
+    const root = ReactDOM.createRoot(element);
+    root.render(<App />);
+</script>
+    <!-- <div id="app"></div>
+    <script>
+       
+        const e=React.createElement(
+            'h1' ,{id:'a'},"I am sai"
+        )
+        const element=document.getElementById("app")
+        const root=ReactDOM.createRoot(element)
+        root.render(e)
+    </script> -->
+    <!-- <div> id="app">/div>
+    <script type="text/babel">
+    const ekement =<h1></h1>
+    </script> -->
+</body> 
+</html>
