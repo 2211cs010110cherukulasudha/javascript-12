@@ -1,0 +1,49 @@
+import React from "react";
+import "./App.css";
+import Welcome from "./components/welcome";
+function App() {
+  return (
+    <div>
+      <Welcome name="SUDHA" greeting="hello"></Welcome>
+      <Welcome name="SAI KANNA" greeting="hii"></Welcome>
+    </div>
+  );
+}
+export default App;
+
+// import React from 'react';
+// import '/App.css';
+// const Welcome=()=><h1 className='message' >hello sai</h1>
+// function App() {
+//   return(
+//     <div className='App'>
+//       <Welcome/>
+//     </div>
+//   )
+// }
+// export default App;
+
+import React from "react";
+
+function Greeting({isLoggedIn}){
+    if(isLoggedIn){
+        return <h1>Welcome Back!</h1>
+   }else{
+    return <h1>please login </h1>
+   }
+}
+export default Greeting;
+
+
+import React from "react";
+
+function Greeting({isLoggedIn}){
+    if(isLoggedIn){
+        return <h1>Welcome Back!</h1>
+   }else{
+    return <h1>please login </h1>
+   }
+}
+export default Greeting;
+
+
