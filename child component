@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        import React,{useState} from 'react';
+import ChildA from './ChildA';
+import ChildB from './ChildB';
+
+const Parent = () => {
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount(c=c+1);
+  };
+  return(
+    <div>
+      <ChildA/>
+      <ChildB count={count} increment={increment}/>
+    </div>
+  )
+}
+export default Parent;
+        // let age
+        // console.log(age)
+        //let a=null
+        //document.write(a)
+        //document.write(typeof(a))
+        //let a=1
+        //console.log("hi +a+a")
+        //document.write('hi+ a+a' ,"<br>")
+        //document.write(`hi+ ${a+a}`)
+        //console.log(`hi +${a+a}`)
+        // a="sai"
+        //b="kumar"
+        //age=30
+        //document.write(`I am ${a+"  "+b},my age is ${age} is year old`)
+    </script>
+</body>
+</html
+
+const childA=()=>{
+    console.log("child A rendered")
+    return <h2>This is child A</h2>
+};
+export default childA;
+const ChildB = ({count, increment}) => {
+  return(
+    <div>
+      <h1>Child B</h1>
+      <h2>Count: {count}</h2>
+      <button onClick={increment}>Increment</button>
+    </div>
+  )
+}
+export default ChildB;
