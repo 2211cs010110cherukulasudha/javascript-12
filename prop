@@ -1,0 +1,75 @@
+React JS:
+1)Java script 
+
+--ReactDOM,creatRoot();
+--render
+JSX:
+JavaScript XML is a syntax extension for JS
+it allows us to write HTML code in react 
+
+the JSX code gets complied into JS 
+Babel:A tool converts HTML code in JS 
+
+REact memo
+--IT is a HOC(high order component) is not a react hook 
+--It will stop unnecessary -rendering of functional components of its props
+--It will improve the performance of the functional components
+
+use context():
+props(properties)in react are used to pass data from parent components to child components
+
+prop drilling is the process of passing the data from parent component to deeply child component through intermediate components by passing data as props at each level.
+function App(){
+    const data="hello i am Saicharan";
+    return(
+      <div>
+        <User1 data={data}/>
+      </div>
+    );
+  };
+  function User1({data}){
+    return <User2 data={data}/>
+  }
+  function User2({data}){
+    return <User3 data={data}/>
+  }
+  function User3({data}){
+    return <User4 data={data}/>
+  }
+  function User4({data}){
+    return<div>{data}</div>
+  }
+  export default App;
+// function App(){
+//     const data="hello i am Sai charan"
+//     return(
+//       <div>
+//         <User1 data={data}/>
+//       </div>
+//     );
+//   };
+//   function User1(data){
+//     return <User2 data={data}/>
+//   }
+//   function User2(data){
+//     return <User3 data={data}/>
+//   }
+//   function User3(data){
+//     return <User4 data={data}/>
+//   }
+//   function User4(data){
+//     return<div>data</div>
+//   }
+//   export default App;
+
+// // //global-scope
+// var a = 10
+// console.log(a);
+// //local-scope
+// let b = 20;
+// console.log(b);
+
+// const c = 30
+// console.log(c);
+
+// console.log("end
