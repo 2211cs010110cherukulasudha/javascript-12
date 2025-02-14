@@ -1,0 +1,85 @@
+React Reducer();
+A Reducer is a function that helps to update (like score, a list) based on action we take 
+--1)current State: the current value of a state 
+--2)Action
+Example:
+Action: add or remove an item
+state: initial value(3 iteams) # 3apples
+--Tracking apples: 
+import React,{useReducer}from 'react'
+function appleRedcuer(state=3,action){
+  switch(action.type){
+    case 'ADD_APPLE':
+      return state+1 ;
+    case 'EAT_APPLE':
+      return state-1 ;
+    default:
+    return state;
+  }
+}
+function App(){
+  const[state,dispatch]=useReducer(appleReducer ,3)
+  return(
+    <div>
+      <h1>Apple Counter</h1>
+      <p>Number of Apples:{state}</p>
+      <button onClick={()=>dispatch({type:'ADD_APPLE'})}>ADD Apple</button>
+      <button onClick={()=>dispatch({type:'EAT_APPLE'})}>EAT Apple</button>
+    </div>
+  )
+}
+export default App;
+
+import React, { useReducer } from 'react';
+
+function appleReducer(state = 3, action) {
+  switch (action.type) {
+    case 'ADD_APPLE':
+      return state + 1;
+    case 'REMOVE_APPLE':
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
+function App() {
+  const [state, dispatch] = useReducer(appleReducer, 3);
+
+  return (
+    <div style={{ padding: '20px', textAlign: 'center' }}>
+      <h1 style={{ color: 'orange' }}>APPLE Counter</h1>
+      <p style={{color: 'bule' }}> Number of APPLES: {state}</p>
+      <button
+        onClick={() => dispatch({ type: 'ADD_APPLE' })}
+        style={{
+          backgroundColor: 'green',
+          color: 'white',
+          padding: '10px 20px',
+          margin: '10px',
+          border: 'none',
+          borderRadius: '20px',
+          cursor: 'pointer',
+        }}
+      >
+        ADD APPLE
+      </button>
+      <button
+        onClick={() => dispatch({ type: 'REMOVE_APPLE' })}
+        style={{
+          backgroundColor: 'red',
+          color: 'white',
+          padding: '10px 20px',
+          margin: '10px',
+          border: 'none',
+          borderRadius: '20px',
+          cursor: 'pointer',
+        }}
+      >
+        REMOVE APPLE
+      </button>
+    </div>
+  );
+}
+
+export default App;
